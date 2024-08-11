@@ -1,0 +1,242 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #f90;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 28px;
+    color: #333;
+}
+
+#product-section, #featured-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 15px;
+    padding: 15px;
+    text-align: center;
+    width: 200px; /* Decreased the width */
+    transition: box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-card img {
+    width: 100%;
+    height: 180px; /* Set a fixed height for consistency */
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    object-fit: contain; /* Ensures the image fits well within the set height */
+}
+
+.product-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-card:hover img {
+    transform: scale(1.05);
+}
+
+.product-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.product-card p {
+    font-size: 16px;
+    color: #555;
+}
+
+.product-card button {
+    background-color: #28a745;
+    color: #fff;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.product-card button:hover {
+    background-color: #218838;
+}
+
+#cart {
+    padding: 30px;
+    background-color: #fff;
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+}
+
+#cart h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#cart-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#cart-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+#checkout-btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+#checkout-btn:hover {
+    background-color: #0056b3;
+}
+
+#newsletter {
+    background-color: #333;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+#newsletter h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#newsletter-form {
+    display: inline-block;
+    position: relative;
+}
+
+#newsletter-form input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    width: 300px;
+}
+
+#newsletter-form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #f90;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: -5px;
+    transition: background-color 0.3s ease;
+}
+
+#newsletter-form button:hover {
+    background-color: #cc7a00;
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+    transition: background-color 0.3s ease;
+}
+
+#back-to-top:hover {
+    background-color: #555;
+}
+
+#cart-list .remove-btn {
+    background-color: #dc3545;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#cart-list .remove-btn:hover {
+    background-color: #c82333;
+}
+#cart-notification {
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    background-color: #d4edda; /* Light green shade */
+    color: #155724; /* Darker green text */
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    display: none; /* Initially hidden */
+    z-index: 1000;
+    transition: opacity 0.3s ease-in-out;
+}
